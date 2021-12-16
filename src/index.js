@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route exact path="/main" element={<Main />} />
+        <Route exact path="/" element={<Main />} />
         <Route exact path="/login" element={<Login />} />
       </Routes>
     </Router>
