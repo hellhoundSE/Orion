@@ -5,6 +5,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Main from "./Main";
 import Login from "./Login";
+import Czesc from "./Czesc";
+import Krok from "./Krok";
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./css/main.css";
 
@@ -14,6 +17,8 @@ ReactDOM.render(
       <Routes>
         <Route exact path="/" element={<Main />} />
         <Route exact path="/login" element={<Login />} />
+        <Route exact path="/czesc" element={<Czesc />} />
+        <Route exact path="/krok" element={<Krok />} />
       </Routes>
     </Router>
   </React.StrictMode>,

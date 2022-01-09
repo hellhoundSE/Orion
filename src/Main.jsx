@@ -7,6 +7,12 @@ const Main = () => {
     const handleLoginClick=() => {
         navigate('/login')
     };
+    const handleCzescClick=() => {
+        navigate('/czesc')
+    };
+    const handleKrokClick=() => {
+        navigate('/krok')
+    };
 
     return (
 <div className="body">
@@ -22,9 +28,9 @@ const Main = () => {
             <p className="desc2">
                 Rozpocznij kurs UX już dziś
             </p>
-            <button className="enter">
+            <button className="enter" onClick={handleKrokClick}>
                 Wchodzę
-            </button>     
+            </button>
         </div>
         <img className="designers" src="./img/6165260.jpg" alt=""/>
         <img className="designers" src="./img/1.svg" alt=""/>
@@ -65,7 +71,7 @@ const Main = () => {
                     <li>Przygotować pierwsze mock-upy, prototypy? </li>
                     <li>Poszerzyć wiedzę z zakresu UX, UI?</li>
                 </ul>
-            <p className="forwho2">Jeśli chociaż na jedno pytanie odpowiedzieć<br/> 
+            <p className="forwho2">Jeśli chociaż na jedno pytanie odpowiedzieć<br/>
                 brzmi "tak" to ten kurs jest właśnie dla Ciebie.</p>
         </div>
     </div>
