@@ -7,6 +7,7 @@ import Main from "./Main";
 import Login from "./Login";
 import Czesc from "./Czesc";
 import Krok from "./Krok";
+import Rejestracja from "./Rejestracja";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./css/main.css";
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/czesc" element={<Czesc />} />
         <Route exact path="/krok" element={<Krok />} />
+        <Route exact path="/rejestracja" element={<Rejestracja />} />
       </Routes>
     </Router>
   </React.StrictMode>,
