@@ -1,8 +1,17 @@
+import {UserImage} from './components/userimage';
+
 const Krok = () => {
     return (<div className="body">
     <header className="head head1">
+        <div></div>
         <img className="orion orion1" src="img/2.svg" alt="orion"/>
+        <div className="userimage">
+          <UserImage></UserImage>
+        </div>
+
     </header>
+    <p class="sci">{sessionStorage.getItem('user')}</p>
+
     <div className="container">
       <div class="steps">
           <div class="step">

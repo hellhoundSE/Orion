@@ -1,5 +1,5 @@
 import {  useNavigate } from 'react-router-dom';
-
+import UserImage from './components/userimage';
 
 
 const Login = () => {
@@ -7,6 +7,11 @@ const Login = () => {
 
     const handleRejestracjaClick=() => {
         navigate('/rejestracja')
+    };
+
+    const validateUser = () => {
+      sessionStorage.setItem('user', "USER_IDx25dk346svbs");
+      navigate('/krok')
     };
 
     return (<div className="body">
@@ -22,7 +27,7 @@ const Login = () => {
                 <div className="left">
                     <input type="text" placeholder="E-mail" className="data"/>
                     <input type="text" placeholder="Hasło" className="data"/>
-                    <button className="login_button login_button1">
+                    <button className="login_button login_button1" onClick={validateUser}>
                         Dalej
                     </button>
                 </div>

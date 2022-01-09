@@ -209,7 +209,7 @@
 }
 
 .head1 {
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .orion1 {
@@ -465,4 +465,10 @@
 .plug2 {
     height: 30px;
     width: 100%;
+}
+
+.userimage {
+  radius: 30px;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
