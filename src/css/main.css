@@ -273,6 +273,15 @@
   padding: 1px;
 }
 
+.login_button_in_registration {
+  width: 475px;
+  height: 60px;
+  margin-left: 0px;
+  border-radius: 10px;
+  padding: 1px;
+  margin-top: 260px;
+}
+
 .center {
   width: 50px;
   height: 100%;

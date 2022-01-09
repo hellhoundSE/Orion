@@ -14,6 +14,7 @@ const Main = () => {
         navigate('/krok')
     };
 
+
     return (
 <div className="body">
     <header className="head">

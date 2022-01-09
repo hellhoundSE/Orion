@@ -1,4 +1,14 @@
+import {  useNavigate } from 'react-router-dom';
+
+
+
 const Login = () => {
+    const navigate = useNavigate();
+
+    const handleRejestracjaClick=() => {
+        navigate('/rejestracja')
+    };
+
     return (<div className="body">
     <header className="head head1">
         <img className="orion orion1" src="img/2.svg" alt="orion"/>
@@ -6,14 +16,14 @@ const Login = () => {
     <div className="container">
         <div className="logowanie">
             <div className="top">
-               <p>Logowanie</p> 
+               <p>Logowanie</p>
             </div>
             <div className="mid">
                 <div className="left">
                     <input type="text" placeholder="E-mail" className="data"/>
                     <input type="text" placeholder="Hasło" className="data"/>
                     <button className="login_button login_button1">
-                        Dalej 
+                        Dalej
                     </button>
                 </div>
                 <div className="center">
@@ -34,10 +44,10 @@ const Login = () => {
             </div>
             <div className="bot">
                 <p className="acc">Nie masz konta?</p>
-                <button className="reg">Zarejestruj się</button>
+                <button className="reg" onClick={handleRejestracjaClick}>Zarejestruj się</button>
             </div>
         </div>
-    </div>  
+    </div>
 </div>)
 };
 
