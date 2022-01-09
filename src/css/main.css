@@ -338,3 +338,122 @@
   border: none;
   cursor: pointer;
 }
+.minds {
+    height: 85%;
+    width: 85%;
+}
+.orion1 {
+    position: relative;
+    right: 26px;
+}
+
+.bigbox {
+    display: flex;
+    height: 650;
+}
+
+.des {
+    height: 650px;
+}
+
+.progress {
+    height: 200px;
+    width: 960px;
+}
+
+.greeting {
+    height: fit-content;
+    width: 960px;
+}
+
+.hello {
+    font: normal normal normal 60px/73px Calibri;
+    padding-left: 100px;
+}
+
+.road {
+    font: normal normal normal 30px/37px Calibri;
+    padding-left: 100px;
+}
+
+.ux {
+    width: 960px;
+    height: fit-content;
+}
+
+.minds {
+    height: 85%;
+    width: 85%;
+}
+
+.plug {
+    height: 300px;
+    width: 100%;
+}
+
+.steps {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.step {
+    width: 270px;
+    height: 375px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 20px;
+}
+
+.krok {
+    height: 50px;
+    width: 170px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 30px;
+    text-align: center;
+    font: normal normal normal 25px/31px Calibri;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#krok1 {
+    background: #FF4F5A 0% 0% no-repeat padding-box;
+}
+
+#krok2 {
+    background: #FF735C 0% 0% no-repeat padding-box;
+}
+
+#krok3 {
+    background: #FFC801 0% 0% no-repeat padding-box;
+}
+
+#krok4 {
+    background: #0062D1 0% 0% no-repeat padding-box;
+}
+
+.sci {
+    font: normal normal normal 50px/63px Calibri;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 0px auto;
+}
+
+.time {
+    font: normal normal normal 25px/31px Calibri;
+    color: #707070;
+    margin-top: 140px;
+    margin-left: 25px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.plug2 {
+    height: 30px;
+    width: 100%;
+}
