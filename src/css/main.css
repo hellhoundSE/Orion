@@ -12,8 +12,8 @@
 
 .orion {
   padding-left: 2%;
-  width: 250px;
-  height: 255px;
+  width: 500px;
+  height: 100px;
 }
 
 .login_button {
@@ -209,7 +209,7 @@
 }
 
 .head1 {
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .orion1 {
@@ -471,4 +471,22 @@
   radius: 30px;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+.headerAllocation {
+  align-items: space-between;
+  justify-content: space-between;
+}
+.headerMain {
+  background-color: #e1e1e1;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.centerLogo {
+  justify-content: center;
+  align-items:  center;
 }

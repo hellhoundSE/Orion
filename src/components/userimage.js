@@ -18,9 +18,11 @@ const userImageStyles = {
     justifyContent: 'center',
     height: '75px',
     width: '75px',
-    radius: '100%',
-    border: '10px solid rgba(0, 0, 0, 0.2)',
-    borderRadius: '100%',
+    radius: '50px',
+    border: '5px solid rgba(0, 0, 0, 0.5)',
+    borderRadius: '50px',
+    marginRight: '5px',
+    overflow: 'hidden',
     backgroundImage: `url(require("../../public/img/man.png"))`
   },
 };
@@ -57,6 +59,10 @@ export const UserImage = () => {
         <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
         <button onClick={closeModal}>close</button>
         <div>I am a modal</div>
+        <div>I am a modal</div>
+        <div>I am a modal</div>
+        <div>I am a modal</div>
+
         <form>
           <input />
           <button>tab navigation</button>
