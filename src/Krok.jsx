@@ -1,16 +1,20 @@
 import {UserImage} from './components/userimage';
-
+import Header from './components/header'
 const Krok = () => {
-    return (<div className="body">
-    <header className="head head1">
+    return (
+
+      <div className="body">
+  {/*  <header className="head head1">
         <div></div>
         <img className="orion orion1" src="img/2.svg" alt="orion"/>
         <div className="userimage">
           <UserImage></UserImage>
         </div>
 
-    </header>
-    <p class="sci">{sessionStorage.getItem('user')}</p>
+
+    </header>*/}
+    <Header></Header>
+    {/*<p class="sci">{sessionStorage.getItem('user')}</p>*/}
 
     <div className="container">
       <div class="steps">

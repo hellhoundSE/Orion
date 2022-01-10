@@ -15,8 +15,8 @@ const Login = () => {
     };
 
     return (<div className="body">
-    <header className="head head1">
-        <img className="orion orion1" src="img/2.svg" alt="orion"/>
+    <header className="head centerLogo">
+      <img className="orion headerAllocation" overflow="visible" height="50%" width="50%" src="./img/1.svg" alt="orion"/>
     </header>
     <div className="container">
         <div className="logowanie">
