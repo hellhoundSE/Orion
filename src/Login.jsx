@@ -8,6 +8,9 @@ const Login = () => {
     const handleRejestracjaClick=() => {
         navigate('/rejestracja')
     };
+    const handleCzescClick=() => {
+        navigate('/czesc')
+    };
 
     const validateUser = () => {
       sessionStorage.setItem('user', "USER_IDx25dk346svbs");
@@ -40,7 +43,7 @@ const Login = () => {
                 </div>
                 <div className="right">
                     <button className="data data1">
-                        <img src="img/logo1.png" alt="" className="small"/>Zaloguj przez Google</button>
+                        <img src="img/logo1.png" alt="" className="small" onClick={handleCzescClick}/>Zaloguj przez Google</button>
                     <button className="data data1">
                         <img src="img/logo2.png" alt="" className="small"/>Zaloguj przez Facebook</button>
                     <button className="data data1">

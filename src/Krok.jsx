@@ -1,6 +1,14 @@
 import {UserImage} from './components/userimage';
 import Header from './components/header'
+import { useNavigate } from 'react-router-dom';
+
 const Krok = () => {
+
+  const navigate = useNavigate();
+
+  const handleClickWprowadzenieHTML=() => {
+      navigate('/wprowadzeniehtml')
+  };
     return (
 
       <div className="body">
@@ -19,7 +27,7 @@ const Krok = () => {
     <div className="container">
       <div class="steps">
           <div class="step">
-              <div class="krok" id="krok1">
+              <div class="krok" id="krok1" onClick={handleClickWprowadzenieHTML}>
                   Krok 1
               </div>
               <p class="sci">HTML</p>
