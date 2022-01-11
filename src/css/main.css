@@ -217,7 +217,7 @@
 }
 
 .container {
-  height: 950px;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,10 +347,6 @@
   border: none;
   cursor: pointer;
 }
-.minds {
-    height: 85%;
-    width: 85%;
-}
 .orion1 {
     position: relative;
     right: 26px;
@@ -413,6 +409,8 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     border-radius: 20px;
+    display: grid;
+    justify-content: center;
 }
 
 .krok {
@@ -428,6 +426,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.krok:hover{
+  color: #888888;
 }
 
 #krok1 {
@@ -513,6 +514,12 @@
   height: 950px;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
+}
+.containerInCzesc {
+  height: 850px;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 .menuElement{

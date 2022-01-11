@@ -7,7 +7,7 @@ const Czesc = () => {
         <img className="orion orion1" src="img/2.svg" alt="orion"/>
     </header>*/}
     <Header></Header>
-    <div className="container">
+    <div className="containerInCzesc">
       <div class="bigbox">
           <div class="des">
               <div class="progress">

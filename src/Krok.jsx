@@ -1,6 +1,8 @@
 import {UserImage} from './components/userimage';
 import Header from './components/header'
 import { useNavigate } from 'react-router-dom';
+import StepProgressBar from './components/stepProgressBar'
+
 
 const Krok = () => {
 
@@ -23,7 +25,9 @@ const Krok = () => {
     </header>*/}
     <Header></Header>
     {/*<p class="sci">{sessionStorage.getItem('user')}</p>*/}
-
+    <div className="progressBar">
+      <StepProgressBar></StepProgressBar>
+    </div>
     <div className="container">
       <div class="steps">
           <div class="step">
