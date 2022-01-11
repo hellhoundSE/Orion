@@ -490,3 +490,35 @@
   justify-content: center;
   align-items:  center;
 }
+
+.introduction {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items:  flex-start;
+}
+
+.progressPanel {
+  flex: 2;
+  justify-content: center;
+
+}
+
+.introductionContent {
+  flex: 7;
+  justify-content: center;
+
+}
+.containerContent {
+  height: 950px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.menuElement{
+  background-color: #FF5970;
+}
+.videoFrame{
+  flex: 1;
+  justifyContent: center;
+}
