@@ -1,5 +1,5 @@
 import {UserImage} from './components/userimage';
-import Header from './components/header'
+import Header from './components/header.jsx'
 import {  useNavigate } from 'react-router-dom';
 import './css/main.css';
 import * as React from 'react';
