@@ -32,7 +32,7 @@ const Main = () => {
             <p className="desc2">
                 Rozpocznij kurs UX już dziś
             </p>
-            <button className="enter" onClick={handleKrokClick}>
+            <button className="enter" onClick={handleLoginClick}>
                 Wchodzę
             </button>
         </div>

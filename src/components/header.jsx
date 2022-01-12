@@ -13,6 +13,10 @@ import { setToSessionStorage } from "../sessionStorage/sessionStorage";
 export const Header = () => {
   const navigate = useNavigate();
 
+  const handleProfilClick=() => {
+      navigate('/profil')
+  };
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -43,7 +47,7 @@ export const Header = () => {
         <button className="userimage" onClick={handleClick}>
           <UserImage  />
         </button>
-        
+
       </header>
       <Menu
         anchorEl={anchorEl}
@@ -80,7 +84,7 @@ export const Header = () => {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
-        <MenuItem>
+        <MenuItem onClick={handleProfilClick}>
           <ListItemIcon>
             <PersonIcon fontSize="small" />
           </ListItemIcon>
