@@ -7,6 +7,8 @@ import PersonIcon from "@mui/icons-material/Person";
 import LogoutIcon from "@mui/icons-material/Logout";
 import NoteIcon from "@mui/icons-material/Note";
 import PendingIcon from "@mui/icons-material/Pending";
+import ArticleIcon from '@mui/icons-material/Article';
+import { setToSessionStorage } from "../sessionStorage/sessionStorage";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -19,9 +21,9 @@ export const Header = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
-  const handleLoginClick = () => {
-    navigate("/login");
+  const handleLogoutClick = () => {
+    setToSessionStorage("userUid",null);
+    navigate("/");
   };
   const handleLogoClick = () => {
     navigate("/");
@@ -38,9 +40,10 @@ export const Header = () => {
           alt="orion"
           onClick={handleLogoClick}
         />
-        <div className="userimage">
-          <UserImage onClick={handleClick} />
-        </div>
+        <button className="userimage" onClick={handleClick}>
+          <UserImage  />
+        </button>
+        
       </header>
       <Menu
         anchorEl={anchorEl}
@@ -91,7 +94,7 @@ export const Header = () => {
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
-            <PendingIcon fontSize="small" />
+            <ArticleIcon fontSize="small" />
           </ListItemIcon>
           Certyfikaty
         </MenuItem>
@@ -101,7 +104,7 @@ export const Header = () => {
           </ListItemIcon>
           Notatki
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={handleLogoutClick}>
           <ListItemIcon>
             <LogoutIcon fontSize="small" />
           </ListItemIcon>
