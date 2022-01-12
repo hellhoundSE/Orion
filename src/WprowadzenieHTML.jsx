@@ -35,8 +35,9 @@ const WprowadzenieHTML = () => {
 
   const [open, setOpen] = React.useState(true);
 
+
   const handleClick = () => {
-    setOpen(!open);
+    setOpen((prevState) => (!prevState))
   };
 
 
