@@ -23,8 +23,6 @@ ReactDOM.render(
         <Route exact path="/krok" element={<Krok />} />
         <Route exact path="/rejestracja" element={<Rejestracja />} />
         <Route exact path="/wprowadzeniehtml" element={<WprowadzenieHTML />} />
-
-
       </Routes>
     </Router>
   </React.StrictMode>,
