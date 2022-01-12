@@ -1,9 +1,13 @@
+import Header from './components/header';
+
+
 const Czesc = () => {
     return (<div className="body">
-    <header className="head head1">
+    {/*<header className="head head1">
         <img className="orion orion1" src="img/2.svg" alt="orion"/>
-    </header>
-    <div className="container">
+    </header>*/}
+    <Header></Header>
+    <div className="containerInCzesc">
       <div class="bigbox">
           <div class="des">
               <div class="progress">

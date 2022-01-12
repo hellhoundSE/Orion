@@ -1,5 +1,6 @@
 import {  useNavigate } from 'react-router-dom';
-import './css/main.css'
+import './css/main.css';
+import HeaderMain from './components/headerMain';
 
 const Main = () => {
     const navigate = useNavigate();
@@ -14,12 +15,15 @@ const Main = () => {
         navigate('/krok')
     };
 
+
     return (
 <div className="body">
-    <header className="head">
-        <img className="orion" src="./img/1.svg" alt="orion"/>
+    {/*<header className="head head1" >
+        <div></div>
+          <img className="orion headerAllocation" overflow="visible" height="100px" width="500px" src="./img/1.svg" alt="orion" onClick={handleCzescClick}/>
         <button className="login_button" onClick={handleLoginClick}>Zaloguj</button>
-    </header>
+    </header>*/}
+    <HeaderMain></HeaderMain>
     <div className="designer">
         <div className="zera">
             <p className="desc1">
@@ -33,7 +37,6 @@ const Main = () => {
             </button>
         </div>
         <img className="designers" src="./img/6165260.jpg" alt=""/>
-        <img className="designers" src="./img/1.svg" alt=""/>
     </div>
     <div className="useful">
         <div className="withus">Z nami poznasz wszystko co przydatne</div>

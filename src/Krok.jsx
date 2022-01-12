@@ -1,12 +1,37 @@
+import {UserImage} from './components/userimage';
+import Header from './components/header'
+import { useNavigate } from 'react-router-dom';
+import StepProgressBar from './components/stepProgressBar'
+
+
 const Krok = () => {
-    return (<div className="body">
-    <header className="head head1">
+
+  const navigate = useNavigate();
+
+  const handleClickWprowadzenieHTML=() => {
+      navigate('/wprowadzeniehtml')
+  };
+    return (
+
+      <div className="body">
+  {/*  <header className="head head1">
+        <div></div>
         <img className="orion orion1" src="img/2.svg" alt="orion"/>
-    </header>
+        <div className="userimage">
+          <UserImage></UserImage>
+        </div>
+
+
+    </header>*/}
+    <Header></Header>
+    {/*<p class="sci">{sessionStorage.getItem('user')}</p>*/}
+    <div className="progressBar">
+      <StepProgressBar></StepProgressBar>
+    </div>
     <div className="container">
       <div class="steps">
           <div class="step">
-              <div class="krok" id="krok1">
+              <div class="krok" id="krok1" onClick={handleClickWprowadzenieHTML}>
                   Krok 1
               </div>
               <p class="sci">HTML</p>
