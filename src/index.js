@@ -11,6 +11,10 @@ import Rejestracja from "./Rejestracja";
 import WprowadzenieHTML from "./WprowadzenieHTML";
 import Profil from "./Profil"
 import Certyfikat from "./Certyfikat"
+import WprowadzenieCSS from "./WprowadzenieCSS";
+import WprowadzenieUX from "./WprowadzenieUX";
+import WprowadzenieUI from "./WprowadzenieUI";
+
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./css/main.css";
@@ -27,6 +31,10 @@ ReactDOM.render(
         <Route exact path="/profil" element={<Profil />} />
         <Route exact path="/certyfikat" element={<Certyfikat />} />
         <Route exact path="/wprowadzeniehtml" element={<WprowadzenieHTML />} />
+        <Route exact path="/wprowadzeniecss" element={<WprowadzenieCSS />} />
+        <Route exact path="/wprowadzenieui" element={<WprowadzenieUI />} />
+        <Route exact path="/wprowadzenieux" element={<WprowadzenieUX />} />
+
       </Routes>
     </Router>
   </React.StrictMode>,

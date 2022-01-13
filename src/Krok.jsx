@@ -11,6 +11,15 @@ const Krok = () => {
   const handleClickWprowadzenieHTML=() => {
       navigate('/wprowadzeniehtml')
   };
+  const handleClickWprowadzenieCSS=() => {
+      navigate('/wprowadzeniecss')
+  };
+  const handleClickWprowadzenieUI=() => {
+      navigate('/wprowadzenieui')
+  };
+  const handleClickWprowadzenieUX=() => {
+      navigate('/wprowadzenieux')
+  };
     return (
 
       <div className="body">
@@ -30,8 +39,8 @@ const Krok = () => {
     </div>
     <div className="container">
       <div class="steps">
-          <div class="step">
-              <div class="krok" id="krok1" onClick={handleClickWprowadzenieHTML}>
+          <div class="step" onClick={handleClickWprowadzenieHTML}>
+              <div class="krok" id="krok1">
                   Krok 1
               </div>
               <p class="sci">HTML</p>
@@ -39,7 +48,7 @@ const Krok = () => {
               <div class="plug2">
               </div>
           </div>
-          <div class="step">
+          <div class="step" onClick={handleClickWprowadzenieCSS}>
               <div class="krok" id="krok2">
                   Krok 2
               </div>
@@ -48,7 +57,7 @@ const Krok = () => {
               <div class="plug2">
               </div>
           </div>
-          <div class="step">
+          <div class="step" onClick={handleClickWprowadzenieUX}>
               <div class="krok" id="krok3">
                   Krok 3
               </div>
@@ -57,7 +66,7 @@ const Krok = () => {
               <div class="plug2">
               </div>
           </div>
-          <div class="step">
+          <div class="step" onClick={handleClickWprowadzenieUI}>
               <div class="krok" id="krok4">
                   Krok 4
               </div>
