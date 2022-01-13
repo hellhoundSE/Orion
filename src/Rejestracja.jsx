@@ -6,6 +6,9 @@ const Rejestracja = () => {
   const handleLoginClick=() => {
       navigate('/login')
   };
+  const handleKrokClick=() => {
+      navigate('/krok')
+  };
     return (<div className="body">
     <header className="head head1">
         <img className="orion orion1" src="img/2.svg" alt="orion"/>
@@ -26,7 +29,7 @@ const Rejestracja = () => {
 
                 </div>
                 <div className="right">
-                        <button className="login_button login_button_in_registration">
+                        <button className="login_button login_button_in_registration" onClick={handleKrokClick}>
                             Dalej
                         </button>
                 </div>
