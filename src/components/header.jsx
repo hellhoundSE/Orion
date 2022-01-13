@@ -116,7 +116,7 @@ export const Header = () => {
           <ListItemIcon>
             <LogoutIcon fontSize="small" />
           </ListItemIcon>
-          Wyłoguj
+          Wyloguj
         </MenuItem>
       </Menu>
     </Fragment>
