@@ -9,6 +9,12 @@ import Czesc from "./Czesc";
 import Krok from "./Krok";
 import Rejestracja from "./Rejestracja";
 import WprowadzenieHTML from "./WprowadzenieHTML";
+import WprowadzenieCSS from "./WprowadzenieCSS";
+import WprowadzenieUX from "./WprowadzenieUX";
+import WprowadzenieUI from "./WprowadzenieUI";
+
+
+
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./css/main.css";
@@ -23,6 +29,10 @@ ReactDOM.render(
         <Route exact path="/krok" element={<Krok />} />
         <Route exact path="/rejestracja" element={<Rejestracja />} />
         <Route exact path="/wprowadzeniehtml" element={<WprowadzenieHTML />} />
+        <Route exact path="/wprowadzeniecss" element={<WprowadzenieCSS />} />
+        <Route exact path="/wprowadzenieui" element={<WprowadzenieUI />} />
+        <Route exact path="/wprowadzenieux" element={<WprowadzenieUX />} />
+
       </Routes>
     </Router>
   </React.StrictMode>,

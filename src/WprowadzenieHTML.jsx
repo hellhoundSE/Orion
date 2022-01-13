@@ -1,5 +1,5 @@
 import {UserImage} from './components/userimage';
-import Header from './components/header.jsx'
+import Header from './components/header'
 import {  useNavigate } from 'react-router-dom';
 import './css/main.css';
 import * as React from 'react';
@@ -25,6 +25,8 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
 import PixIcon from '@mui/icons-material/Pix';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const WprowadzenieHTML = () => {
   const navigate = useNavigate();
@@ -56,7 +58,12 @@ const WprowadzenieHTML = () => {
     <Header></Header>
     {/*<p class="sci">{sessionStorage.getItem('user')}</p>*/}
       <div className="progressBar">
-        <StepProgressBar></StepProgressBar>
+        <StepProgressBar progressPercent="25"></StepProgressBar>
+      </div>
+      <div className="navProgressBar">
+        <ArrowBackIcon></ArrowBackIcon>
+        <ArrowForwardIcon></ArrowForwardIcon>
+
       </div>
       <div className="containerContent">
 

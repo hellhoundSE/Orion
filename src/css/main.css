@@ -538,3 +538,15 @@
 .backgroundColorMenu {
   background-color: #223322;
 }
+.navProgressBar {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+.arrowInProgressBar{
+
+}
