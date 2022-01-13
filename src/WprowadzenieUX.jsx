@@ -34,6 +34,12 @@ const WprowadzenieUX = () => {
   const handleClickWprowadzenieHTML=() => {
       navigate('/login')
   };
+  const handleClickWprowadzenieCSS=() => {
+      navigate('/wprowadzeniecss')
+  };
+  const handleClickWprowadzenieUI=() => {
+      navigate('/wprowadzenieui')
+  };
 
   const [open, setOpen] = React.useState(true);
 
@@ -58,15 +64,11 @@ const WprowadzenieUX = () => {
     <Header></Header>
     {/*<p class="sci">{sessionStorage.getItem('user')}</p>*/}
       <div className="progressBar" >
-        <StepProgressBar progressPercent="90"></StepProgressBar>
+        <StepProgressBar progressPercent="75"></StepProgressBar>
       </div>
       <div className="navProgressBar">
-        <ArrowForwardIcon></ArrowForwardIcon>
-        <ArrowBackIcon></ArrowBackIcon>
-      </div>
-      <div className="navProgressBar">
-        <ArrowBackIcon></ArrowBackIcon>
-        <ArrowForwardIcon></ArrowForwardIcon>
+      <ArrowBackIcon onClick={handleClickWprowadzenieCSS}></ArrowBackIcon>
+      <ArrowForwardIcon onClick={handleClickWprowadzenieUI}></ArrowForwardIcon>
 
       </div>
       <div className="containerContent">
@@ -115,13 +117,13 @@ const WprowadzenieUX = () => {
           <ListItemIcon>
             <StarBorder />
           </ListItemIcon>
-          <ListItemText primary="Wstęp do HTML" />
+          <ListItemText primary="Wstęp do UX" />
         </ListItemButton>
         <ListItemButton sx={{ pl: 4 }}>
           <ListItemIcon>
             <StarBorder />
           </ListItemIcon>
-          <ListItemText primary="Język HTML" />
+          <ListItemText primary="Język UX" />
         </ListItemButton>
         <ListItemButton sx={{ pl: 4 }}>
           <ListItemIcon>
@@ -150,13 +152,13 @@ const WprowadzenieUX = () => {
           <ListItemIcon>
             <StarBorder />
           </ListItemIcon>
-          <ListItemText primary="Wstęp do HTML" />
+          <ListItemText primary="Wstęp do UX" />
         </ListItemButton>
         <ListItemButton sx={{ pl: 4 }}>
           <ListItemIcon>
             <StarBorder />
           </ListItemIcon>
-          <ListItemText primary="Język HTML" />
+          <ListItemText primary="Język UX" />
         </ListItemButton>
         <ListItemButton sx={{ pl: 4 }}>
           <ListItemIcon>
@@ -179,7 +181,7 @@ const WprowadzenieUX = () => {
 
         <div className="introductionContent">
           <div className="videoFrame">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MRIMT0xPXFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1200" height="600" src="https://www.youtube.com/embed/g4skI1WGNww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
