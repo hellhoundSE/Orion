@@ -17,6 +17,10 @@ export const Header = () => {
       navigate('/profil')
   };
 
+  const handleCertyfikatClick=() => {
+      navigate('/certyfikat')
+  };
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -96,7 +100,7 @@ export const Header = () => {
           </ListItemIcon>
           Postępy
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={handleCertyfikatClick}>
           <ListItemIcon>
             <ArticleIcon fontSize="small" />
           </ListItemIcon>
