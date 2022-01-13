@@ -32,7 +32,10 @@ const WprowadzenieCSS = () => {
   const navigate = useNavigate();
 
   const handleClickWprowadzenieHTML=() => {
-      navigate('/login')
+      navigate('/wprowadzeniehtml')
+  };
+  const handleClickWprowadzenieUX=() => {
+      navigate('/wprowadzenieux')
   };
 
   const [open, setOpen] = React.useState(true);
@@ -61,8 +64,8 @@ const WprowadzenieCSS = () => {
         <StepProgressBar progressPercent="50"></StepProgressBar>
       </div>
       <div className="navProgressBar">
-        <ArrowBackIcon></ArrowBackIcon>
-        <ArrowForwardIcon></ArrowForwardIcon>
+        <ArrowBackIcon onClick={handleClickWprowadzenieHTML}></ArrowBackIcon>
+        <ArrowForwardIcon onClick={handleClickWprowadzenieUX}></ArrowForwardIcon>
 
       </div>
       <div className="containerContent">
@@ -111,13 +114,13 @@ const WprowadzenieCSS = () => {
           <ListItemIcon>
             <StarBorder />
           </ListItemIcon>
-          <ListItemText primary="Wstęp do HTML" />
+          <ListItemText primary="Wstęp do CSS" />
         </ListItemButton>
         <ListItemButton sx={{ pl: 4 }}>
           <ListItemIcon>
             <StarBorder />
           </ListItemIcon>
-          <ListItemText primary="Język HTML" />
+          <ListItemText primary="Język CSS" />
         </ListItemButton>
         <ListItemButton sx={{ pl: 4 }}>
           <ListItemIcon>
@@ -146,13 +149,13 @@ const WprowadzenieCSS = () => {
           <ListItemIcon>
             <StarBorder />
           </ListItemIcon>
-          <ListItemText primary="Wstęp do HTML" />
+          <ListItemText primary="Wstęp do CSS" />
         </ListItemButton>
         <ListItemButton sx={{ pl: 4 }}>
           <ListItemIcon>
             <StarBorder />
           </ListItemIcon>
-          <ListItemText primary="Język HTML" />
+          <ListItemText primary="Język CSS" />
         </ListItemButton>
         <ListItemButton sx={{ pl: 4 }}>
           <ListItemIcon>
@@ -175,7 +178,7 @@ const WprowadzenieCSS = () => {
 
         <div className="introductionContent">
           <div className="videoFrame">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MRIMT0xPXFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1200" height="600" src="https://www.youtube.com/embed/zaxK4YHBU3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
