@@ -42,19 +42,19 @@ const Main = () => {
         <div className="withus">Z nami poznasz wszystko co przydatne</div>
     </div>
     <div className="courses">
-        <div className="course">
+        <div className="course" onClick={handleLoginClick}>
             <img className="pages" src="./img/Devices.jpg" alt="HTML"/>
             <p className="pagesdesc">HTML</p>
         </div>
-        <div className="course">
+        <div className="course" onClick={handleLoginClick}>
             <img className="pages" src="./img/5243318.jpg" alt="CSS"/>
             <p className="pagesdesc">CSS</p>
         </div>
-        <div className="course">
+        <div className="course" onClick={handleLoginClick}>
             <img className="pages" src="./img/5933524.jpg" alt="UX"/>
             <p className="pagesdesc">UX</p>
         </div>
-        <div className="course">
+        <div className="course" onClick={handleLoginClick}>
             <img className="pages" src="img/5107035.jpg" alt="UI"/>
             <p className="pagesdesc">UI</p>
         </div>

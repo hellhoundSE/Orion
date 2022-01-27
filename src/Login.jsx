@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import UserImage from './components/userimage';
 import { getFromSessionStorage, setToSessionStorage } from './sessionStorage/sessionStorage';
 import { validateCridentials } from './sessionStorage/usedCridentials';
 
@@ -9,7 +8,7 @@ const Login = () => {
 
     const userUid = getFromSessionStorage("userUid");
     const navigate = useNavigate();
-    const [cridentials, setCridentials] = useState({login:'bartosz',password:'bartosz'});
+    const [cridentials, setCridentials] = useState({login:'',password:''});
 
     useEffect(() => {
         if(userUid)

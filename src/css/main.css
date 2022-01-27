@@ -110,6 +110,7 @@
 
 .course {
   margin-top: 170px;
+  cursor: pointer;
   height: 480px;
   width: 350px;
   border: 1px solid #707070;
@@ -404,6 +405,7 @@
 }
 
 .step {
+  cursor: pointer;
   width: 270px;
   height: 375px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -414,6 +416,7 @@
 }
 
 .krok {
+  cursor: pointer;
   height: 50px;
   width: 170px;
   margin-top: 10px;
@@ -563,8 +566,8 @@
   margin-left: 25px;
   margin-top: 25px;
   margin-bottom: 25px;
+  cursor: pointer;
   margin-right: 25px;
 }
-.arrowInProgressBar{
-
+.arrowInProgressBar {
 }

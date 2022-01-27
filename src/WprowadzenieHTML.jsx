@@ -31,8 +31,8 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 const WprowadzenieHTML = () => {
   const navigate = useNavigate();
 
-  const handleClickWprowadzenieHTML=() => {
-      navigate('/login')
+  const handleClickKrok=() => {
+      navigate('/krok')
   };
   const handleClickWprowadzenieCSS=() => {
       navigate('/wprowadzeniecss')
@@ -64,7 +64,7 @@ const WprowadzenieHTML = () => {
         <StepProgressBar progressPercent="25"></StepProgressBar>
       </div>
       <div className="navProgressBar">
-        <ArrowBackIcon></ArrowBackIcon>
+        <ArrowBackIcon onClick={handleClickKrok}></ArrowBackIcon>
         <ArrowForwardIcon onClick={handleClickWprowadzenieCSS}></ArrowForwardIcon>
 
       </div>
